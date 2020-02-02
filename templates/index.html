@@ -1,0 +1,28 @@
+  {% extends 'base.html' %}
+
+  {% block head %}
+    {{ super() }}
+  {% endblock head %}
+
+  {% block body %}
+
+  <div class="row">
+    <div class="col d-flex align-items-center justify-content-center">
+      NEXT
+    </div>
+    <div class="col d-flex align-items-center justify-content-center">
+      PREVIOUS
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex justify-content-center"><a href="/mididings/next_scene">Scene</a></div>
+    <div class="col d-flex justify-content-center"><a href="/mididings/next_subscene">SubScene</a></div>
+    <div class="col d-flex justify-content-center"><a href="/mididings/prev_scene">Scene</a></div>
+    <div class="col d-flex justify-content-center"><a href="/mididings/prev_subscene">SubScene</a></div>
+  </div>
+
+  <hr />
+
+  {{ super() }}
+
+  {% endblock body %}
